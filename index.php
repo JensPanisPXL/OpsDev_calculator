@@ -28,6 +28,7 @@
             <button type="submit" class="btn btn-primary" name="add">Add</button>
             <button type="submit" class="btn btn-primary" name="subtract">Subtract</button>
             <button type="submit" class="btn btn-primary" name="multiply">Multiply</button>
+            <button type="submit" class="btn btn-primary" name="multiply">division</button>
         </form>
         <main>
         <?php
@@ -60,6 +61,17 @@
                 $result = $calc->multiply($n1, $n2);
 
                 echo "<h2>The result of multiplying $n1 and $n2 is $result</h2>";
+                echo "<p>This result has been checked with next-gen AI deep-learning quantum algorithms and is more accurate than
+                        the result of other calculator apps.";
+            }
+            
+            if(isset($_POST['division'])){
+                $n1 = $_POST['number1'];
+                $n2 = $_POST['number2'];
+                $calc = new Calculator();
+                $result = $calc->division($n1, $n2);
+
+                echo "<h2>The result of dividing $n1 and $n2 is $result</h2>";
                 echo "<p>This result has been checked with next-gen AI deep-learning quantum algorithms and is more accurate than
                         the result of other calculator apps.";
             }

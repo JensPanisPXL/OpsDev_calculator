@@ -28,7 +28,7 @@
             <button type="submit" class="btn btn-primary" name="add">Add</button>
             <button type="submit" class="btn btn-primary" name="subtract">Subtract</button>
             <button type="submit" class="btn btn-primary" name="multiply">Multiply</button>
-            <button type="submit" class="btn btn-primary" name="multiply">division</button>
+            <button type="submit" class="btn btn-primary" name="division">division</button>
         </form>
         <main>
         <?php

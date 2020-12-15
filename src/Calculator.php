@@ -12,6 +12,10 @@ class Calculator
     public function subtract($a,$b){
         return $a - $b;
     }
+    
+    public function division($a,$b){
+        return $a / $b;
+    }
 }
 
 ?>

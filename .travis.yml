@@ -4,6 +4,9 @@ php:
 before_script:
  - composer self-update
  - composer install
+deploy:
+  provider: heroku:git
+  api_key: <encrypted api_key>
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
